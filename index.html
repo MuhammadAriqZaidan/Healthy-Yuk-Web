@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Healthy-Yuk!</title>
+    <link rel="stylesheet" href="src/output.css" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="shortcut icon"
+      href="./images/PSHT LOGO.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+  </head>
+  <body class="relative min-h-[100vh]">
+    <div class="flex flex-col overflow-x-hidden overscroll-none">
+      <header>
+        <nav>
+          <!-- mobile navbar -->
+          <div class="z-20 fixed md:hidden flex w-dvw justify-between">
+            <div
+              id="mobilenavbar"
+              class="hidden absolute bg-[#7878786d] backdrop-blur-md z-[21] w-full h-[250px]"
+            >
+              <div class="flex justify-center pt-5">
+                <div class="flex flex-col w-full items-center px-20 gap-5">
+                  <a href="#" class="text-xl">Navigation Bar</a>
+                  <div class="h-[1px] bg-white w-full"></div>
+
+                  <ul class="flex items-center flex-col gap-5">
+                    <li><a href="#about">Discover</a></li>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#ai">Health Innovations</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="ml-10 mt-5 flex flex-row bg-[#7878786d] backdrop-blur-md rounded-lg justify-center"
+            >
+              <a href="#"
+                ><img src="images/PSHT LOGO.png" width="50" alt="" srcset=""
+              /></a>
+            </div>
+
+            <div
+              id="burger"
+              class="mr-10 z-30 mt-5 cursor-pointer flex flex-col gap-1.5 bg-[#7878781a] backdrop-blur-md rounded-lg justify-center items-center w-[50px] h-[50px] transform transition-transform duration-300"
+            >
+              <div
+                id="line1"
+                class="w-[30px] h-[2px] bg-black transform transition-transform duration-300"
+              ></div>
+              <div
+                id="line2"
+                class="w-[30px] h-[2px] bg-black transform transition-opacity duration-300"
+              ></div>
+              <div
+                id="line3"
+                class="w-[30px] h-[2px] bg-black transform transition-transform duration-300"
+              ></div>
+            </div>
+          </div>
+
+          <div
+            class="transition-colors hidden md:fixed gap-5 md:w-dvw md:flex md:justify-center pt-5 z-20 duration-300"
+          >
+            <div
+              class="flex flex-row bg-[#7878781a] backdrop-blur-md rounded-lg justify-center"
+            >
+              <a href="#"
+                ><img src="images/PSHT LOGO.png" width="50" alt="" srcset=""
+              /></a>
+            </div>
+            <div
+              class="flex flex-row bg-[#7878781a] backdrop-blur-md px-16 rounded-lg justify-center"
+            >
+              <ul class="flex items-center flex-row gap-10">
+                <li><a href="#about">Discover</a></li>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#ai">Health Innovations</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main class="z-10 w-full pb-[100px] bg-white">
+        <img class="w-full object-contain" src="images/ai.webp" alt="" />
+
+        <div class="w-full flex flex-col items-center">
+          <h1 class="font-normal text-lg md:text-2xl mb-4 md:mb-7">
+            A positive mindset is the foundation for a successful life.
+          </h1>
+          <div>
+            <button
+              class="border-2 border-blue-500 rounded-full px-1.5 py-1 md:px-2 md:py-1"
+            >
+              <a
+                href="#about"
+                class="text-sm md:text-lg text-blue-500 font-medium"
+                >Discover Now</a
+              >
+            </button>
+          </div>
+        </div>
+        <!-- actual container lols -->
+        <div class="flex flex-col">
+          <section
+            id="about"
+            class="h-[650px] md:justify-around flex md:items-center sm:flex-col flex-col md:flex-row bg-slate-50 mt-10"
+          >
+            <div
+              data-aos="fade-up"
+              class="md:w-[400px] md:flex h-[300px] md:h-[500px] md:items-start flex flex-col justify-center items-center w-full"
+            >
+              <h1 class="font-light">Watch</h1>
+              <h1
+                class="w-[200px] md:w-[400px] text-center text-lg md:text-2xl"
+              >
+                Researchers find strong relationships
+                <span class="text-blue-600">protect</span> long-term health and
+                happiness
+              </h1>
+            </div>
+
+            <div
+              class="md:w-[500px] flex md:justify-end justify-center"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-easing="ease-out"
+            >
+              <iframe
+                width="500"
+                height="255"
+                src="https://www.youtube.com/embed/fYAW7YMH6kk"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </section>
+
+          <section
+            id="overview"
+            class="flex-col flex px-10 md:px-20 py-32 bg-[#161719] gap-32"
+          >
+            <div class="flex justify-center">
+              <div class="flex flex-col">
+                <h1
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                  class="font-light text-white"
+                >
+                  Overview on how
+                </h1>
+                <h1
+                  data-aos="fade-up"
+                  data-aos-delay="500"
+                  class="w-[200px] md:w-[400px] text-lg md:text-xl text-white"
+                >
+                  Technology is helping us
+                  <span class="text-blue-500">
+                    to achieve a <u>better health.</u></span
+                  >
+                </h1>
+              </div>
+            </div>
+
+            <div class="flex flex-col justify-center">
+              <div class="flex md:flex-row flex-col md:pl-32 md:gap-32 pb-12">
+                <div
+                  class="flex flex-col md:basis-[400px] md:pb-0 pb-20 text-gray-200 text-sm"
+                >
+                  <h1 data-aos="fade-up" data-aos-delay="600">0.1</h1>
+                  <h1 data-aos="fade-up" data-aos-delay="650">
+                    Remote Health Monitoring
+                  </h1>
+                </div>
+
+                <div class="flex flex-col flex-grow">
+                  <div class="flex flex-col pb-11">
+                    <span
+                      data-aos="fade-up"
+                      data-aos-delay="600"
+                      class="text-2xl text-white font-semibold pb-2"
+                      >Remote Monitoring.</span
+                    >
+                    <h1
+                      data-aos="fade-up"
+                      data-aos-delay="650"
+                      class="text-white"
+                    >
+                      Advances in technology allow for real-time health
+                      monitoring through wearable devices. These devices track
+                      vital signs, physical activity, and sleep patterns,
+                      enabling individuals and healthcare providers to make
+                      informed decisions about health and wellness.
+                    </h1>
+                  </div>
+
+                  <div class="bg-[#393b3e] h-[1px]">
+                    <!-- ni buat line -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex md:flex-row flex-col md:pl-32 md:gap-32 pb-12">
+                <div
+                  class="flex flex-col md:basis-[400px] md:pb-0 pb-20 text-gray-200 text-sm"
+                >
+                  <h1 data-aos="fade-up" data-aos-delay="600">0.2</h1>
+                  <h1 data-aos="fade-up" data-aos-delay="650">
+                    Telemedicine Services
+                  </h1>
+                </div>
+
+                <div class="flex flex-col flex-grow">
+                  <div class="flex flex-col pb-11">
+                    <span
+                      data-aos="fade-up"
+                      data-aos-delay="600"
+                      class="text-2xl text-white font-semibold pb-2"
+                      >Telemedicine</span
+                    >
+                    <h1
+                      data-aos-delay="650"
+                      data-aos="fade-up"
+                      class="text-white"
+                    >
+                      Telemedicine allows patients to consult with healthcare
+                      professionals remotely, improving access to medical care
+                      and reducing wait times. Patients can receive
+                      consultations, follow-ups, and prescriptions from the
+                      comfort of their homes.
+                    </h1>
+                  </div>
+
+                  <div class="bg-[#393b3e] h-[1px]">
+                    <!-- ni buat line -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex md:flex-row flex-col md:pl-32 md:gap-32 pb-12">
+                <div
+                  class="flex flex-col md:basis-[400px] md:pb-0 pb-20 text-gray-200 text-sm"
+                >
+                  <h1 data-aos-delay="600" data-aos="fade-up">0.3</h1>
+                  <h1
+                    data-aos-delay="650"
+                    data-aos="fade-up"
+                    data-aos-delay="650"
+                  >
+                    Predicting Health Risks
+                  </h1>
+                </div>
+
+                <div class="flex flex-col flex-grow">
+                  <div class="flex flex-col pb-11">
+                    <span
+                      data-aos-delay="600"
+                      data-aos="fade-up"
+                      class="text-2xl text-white font-semibold pb-2"
+                      >Health risks</span
+                    >
+                    <h1
+                      data-aos="fade-up"
+                      data-aos-delay="650"
+                      class="text-white"
+                    >
+                      Monitoring health risks using AI technology has the
+                      potential to improve public health by predicting
+                      epidemics, analyzing lifestyle data, and identifying
+                      vulnerable populations. Early detection and timely
+                      intervention can save lives and enhance the overall
+                      well-being of communities.
+                    </h1>
+                  </div>
+
+                  <div class="bg-[#393b3e] h-[1px]">
+                    <!-- ni buat line -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="ai" class="bg-white">
+            <div class="flex items-center justify-around h-full flex-col py-12">
+              <div class="flex flex-col gap-3 items-center pb-32">
+                <div class="w-[10px] bg-black h-[10px]"></div>
+                <h1 class="text-sm" data-aos="fade-up" data-aos-delay="600">
+                  Meet the <span class="text-blue-500">AIs</span>
+                  <span data-aos="fade-up" data-aos-delay="800"
+                    >who improves our well-being</span
+                  >
+                </h1>
+              </div>
+
+              <div
+                class="flex flex-col md:flex-row md:w-full md:justify-around md:gap-0 gap-28"
+              >
+                <div class="flex gap-5 h-[280px]">
+                  <div>
+                    <h1 class="text-blue-500 font-light">0.1</h1>
+                  </div>
+
+                  <div
+                    class="flex flex-col gap-3 w-[300px] md:w-[250px] justify-between"
+                  >
+                    <h1>Global Health Monitor</h1>
+                    <h1 class="text-sm">
+                      This platform uses AI to track global health data,
+                      predicting outbreaks and helping governments respond to
+                      crises more effectively.
+                    </h1>
+                    <button
+                      class="border-2 border-blue-500 rounded-full px-1.5 py-1"
+                    >
+                      <a
+                        target="_blank"
+                        href="https://www.globalforestwatch.org/"
+                        class="text-sm text-blue-500 font-medium"
+                        >Visit Them Now</a
+                      >
+                    </button>
+                  </div>
+                </div>
+
+                <div class="flex gap-5 h-[280px]">
+                  <div>
+                    <h1 class="text-blue-500 font-light">0.2</h1>
+                  </div>
+
+                  <div
+                    class="flex flex-col gap-3 w-[300px] md:w-[250px] justify-between"
+                  >
+                    <h1>AI Health Advisor</h1>
+                    <h1 class="text-sm">
+                      AI-powered health advisors are providing personalized
+                      health guidance, helping individuals maintain better
+                      wellness through real-time data analysis.
+                    </h1>
+                    <button
+                      class="border-2 border-blue-500 rounded-full px-1.5 py-1"
+                    >
+                      <a
+                        target="_blank"
+                        href="https://www.ibm.com/products/environmental-intelligence-suite?utm_content=SRCWW&p1=Search&p4=43700077015058007&p5=p&p9=58700008460401385&gclid=Cj0KCQjwo8S3BhDeARIsAFRmkOPQQti833AjsJ_Sy0PAA44YUuJ4pxql3rseg9wSJKRLc6SGwePYkOsaAkh4EALw_wcB&gclsrc=aw.ds"
+                        class="text-sm text-blue-500 font-medium"
+                        >Visit Them Now</a
+                      >
+                    </button>
+                  </div>
+                </div>
+
+                <div class="flex gap-5 h-[280px]">
+                  <div>
+                    <h1 class="text-blue-500 font-light">0.3</h1>
+                  </div>
+
+                  <div
+                    class="flex flex-col gap-3 w-[300px] md:w-[250px] justify-between"
+                  >
+                    <h1>Health Analytics</h1>
+                    <h1 class="text-sm">
+                      This AI system analyzes health data to predict potential
+                      risks and inform policy changes, promoting healthier
+                      lifestyles worldwide.
+                    </h1>
+                    <button
+                      class="border-2 border-blue-500 rounded-full px-1.5 py-1"
+                    >
+                      <a
+                        target="_blank"
+                        href="https://www.wildlifeinsights.org/"
+                        class="text-sm text-blue-500 font-medium"
+                        >Visit Them Now</a
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <!-- Footer -->
+    <footer
+      class="bg-black text-white flex flex-col gap-7 justify-end z-10 bottom-0 w-full rounded-t-3xl h-[900px] md:h-[530px] md:px-32 md:pb-7 px-12 pb-5 relative"
+    >
+      <div
+        class="absolute top-[-30px] rounded-3xl md:ml-0 md:mr-0 ml-auto mr-auto left-0 right-0 md:left-32 w-[80%] md:w-[50%] bg-blue-500 h-[300px] md:h-[200px] p-2 pb-10"
+      >
+        <div class="flex flex-col h-full md:gap-5 gap-10">
+          <div class="flex justify-center">
+            <h1 class="text-xl md:text-3xl text-center">
+              Suami sah Hu Tao dan Reisen
+            </h1>
+          </div>
+
+          <div
+            class="flex md:flex-row flex-col gap-3 items-center md:justify-between text-center"
+          >
+            <div class="flex flex-col w-[250px] md:h-[80px] justify-between">
+              <!-- IQBAL -->
+              <h1 class="text-xl">Muhammad Ariq Zaidan</h1>
+              <button class="text-white bg-black rounded-3xl mt-2 py-2">
+                <a href="https://www.instagram.com/herp.lurpyy/">Instagram</a>
+              </button>
+            </div>
+            <div class="flex flex-col w-[250px] md:h-[80px] justify-between">
+              <!-- ATHA -->
+              <h1 class="text-lg">Muhammad Athallah Arifin</h1>
+              <button class="text-white bg-black rounded-3xl py-2">
+                <a href="https://www.instagram.com/el_lukiee/">Instagram</a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- logo -->
+      </div>
+      <div
+        class="absolute md:right-[100px] md:top-0 right-[50px] top-[220px] md:w-[500px] md:h-[500px] w-[250px] h-[250px] md:bottom-[50px]"
+      >
+        <img src="./images/PSHT LOGO.png" alt="logoUs" />
+      </div>
+
+      <div
+        class="flex flex-col self-center md:self-start md:items-start items-center gap-5"
+      >
+        <img src="./images/PSHT LOGO.png" alt="logoUs" width="50" />
+        <ul class="flex gap-5">
+          <li><a href="#about">Discover</a></li>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#ai">Health Innovations</a></li>
+        </ul>
+        <div class="flex flex-col gap-2">
+          <h1 class="font-light">Athallah's Social Medias</h1>
+          <div class="flex gap-5 justify-center md:justify-start">
+            <a href="https://www.instagram.com/el_lukiee">
+              <svg
+                class="fill-white"
+                xmlns='http://www.w3.org/2000/svg"'
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                />
+              </svg>
+            </a>
+
+            <a href="https://www.linkedin.com/in/athallah-arifin-905a3b28a">
+              <svg
+                class="fill-white"
+                xmlns='http://www.w3.org/2000/svg"'
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+                />
+              </svg>
+            </a>
+
+            <a href="https://github.com/LukieWachtt">
+              <svg
+                class="fill-white"
+                xmlns='http://www.w3.org/2000/svg"'
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-col gap-2">
+          <h1 class="font-light">Ariq's Social Medias</h1>
+          <div class="flex gap-5 justify-center md:justify-start">
+            <a href="https://www.instagram.com/herp.lurpyy/">
+              <svg
+                class="fill-white"
+                xmlns='http://www.w3.org/2000/svg"'
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                />
+              </svg>
+            </a>
+
+            <a href="https://www.linkedin.com/in/muhammad-ariq-zaidan-a419a929b/">
+              <svg
+                class="fill-white"
+                xmlns='http://www.w3.org/2000/svg"'
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+                />
+              </svg>
+            </a>
+
+            <a href="https://github.com/MuhammadAriqZaidan">
+              <svg
+                class="fill-white"
+                xmlns='http://www.w3.org/2000/svg"'
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col md:flex-row gap-3 self-center md:self-auto items-center opacity-65 text-sm font-light md:justify-between"
+      >
+        <h1>
+          Copyright Suami sah Hu Tao dan Reisen | IDN Boarding School Solo
+        </h1>
+        <h1>SuHaSen</h1>
+      </div>
+    </footer>
+    <!-- end of footer -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="aos.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
